@@ -2,6 +2,19 @@
 
 A new Flutter project.
 
+
+# Telemedicine Flutter App
+
+A modern Telemedicine app built with Flutter.
+
+## Features
+- Doctor/Patient chat system
+- Doctor profile view
+- Message filtering by user
+- Responsive UI
+
+## Getting Started
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
