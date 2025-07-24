@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tlmdcin/data/UserData.dart';
+import 'package:tlmdcin/data/messageListData.dart';
 import 'package:tlmdcin/scrn/Home.dart';
 
 class tlmdcin extends StatelessWidget {
@@ -10,7 +12,7 @@ class tlmdcin extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Telemedicien",
       theme: ThemeData(),
-      home: Home(),
+      home: Home(user: dummyUsers[0], messagelistmodel: dummyMessageList[0]),
     );
   }
 }

@@ -4,17 +4,26 @@ import 'package:tlmdcin/common%20wiget/freeConsultant.dart';
 import 'package:tlmdcin/common%20wiget/specialty.dart';
 import 'package:tlmdcin/common%20wiget/top%20consultant.dart';
 import 'package:tlmdcin/common%20wiget/topdoctor.dart';
+import 'package:tlmdcin/data/UserData.dart';
+import 'package:tlmdcin/data/messageData.dart';
+import 'package:tlmdcin/data/messageListData.dart';
+import 'package:tlmdcin/model/messageListmodel.dart';
+import 'package:tlmdcin/model/userModel.dart';
 import 'package:tlmdcin/scrn/appointment.dart';
 import 'package:tlmdcin/scrn/chat.dart';
 
 import 'package:tlmdcin/scrn/profile.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key});
+  final UserModel user;
+  final Messagelistmodel messagelistmodel;
+  Home({super.key, required this.user, required this.messagelistmodel});
 
   @override
   State<Home> createState() => _HomeState();
 }
+
+final doctor = dummyMessages.firstWhere((msg) => msg.senderId.startsWith("do"));
 
 class _HomeState extends State<Home> {
   int _selectedIndex = 0;
@@ -23,7 +32,11 @@ class _HomeState extends State<Home> {
   final List<Widget> _pages = [
     const HomeContent(),
     const Appointment(),
-    const chat(),
+    Chat(
+      user: dummyUsers[0],
+      messagelistmodel:
+          dummyMessageList[0], // Pass a valid Messagelistmodel instance or list
+    ),
     const Profile(),
   ];
 

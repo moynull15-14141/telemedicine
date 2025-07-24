@@ -63,6 +63,10 @@ flutter:
     - assets/dm1.jpeg
     - assets/dm2.jpeg
     - assets/dm3.jpeg
+    - assets/dm4.jpg
+    - assets/dm5.jpeg
+    - assets/dm6.jpeg
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
