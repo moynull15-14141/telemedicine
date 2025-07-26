@@ -79,8 +79,9 @@ class _ChatState extends State<Chat> {
                   itemBuilder: (context, index) {
                     final message = dummyMessageList[index];
 
-                    return GestureDetector(
+                    return InkWell(
                       onTap: () {
+                        //message filtaring
                         String selectedDoctorId = message.senderId;
                         String patientId = widget.user.id;
 

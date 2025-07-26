@@ -27,10 +27,10 @@ class _chatState extends State<chatOld> {
   @override
   Widget build(BuildContext context) {
     // এখন সরাসরি Messagemodel থেকে ডাক্তারের নাম ও ছবি নেওয়া হচ্ছে
-    final String actualDoctorName =
-        doctorMessage?.senderName ?? "Unknown Doctor";
-    final String actualDoctorImage =
-        doctorMessage?.image ?? "assets/default_doctor.jpeg";
+    // final String actualDoctorName =
+    //     doctorMessage?.senderName ?? "Unknown Doctor";
+    // final String actualDoctorImage =
+    //     doctorMessage?.image ?? "assets/default_doctor.jpeg";
 
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 243, 234, 206),

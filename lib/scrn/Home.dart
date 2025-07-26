@@ -28,18 +28,6 @@ final doctor = dummyMessages.firstWhere((msg) => msg.senderId.startsWith("do"));
 class _HomeState extends State<Home> {
   int _selectedIndex = 0;
 
-  // চারটি পেজের লিস্ট
-  final List<Widget> _pages = [
-    const HomeContent(),
-    const Appointment(),
-    Chat(
-      user: dummyUsers[0],
-      messagelistmodel:
-          dummyMessageList[0], // Pass a valid Messagelistmodel instance or list
-    ),
-    const Profile(),
-  ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -63,6 +51,17 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    final List<Widget> _pages = [
+      const HomeContent(),
+      const Appointment(),
+      Chat(
+        user: dummyUsers[0],
+        messagelistmodel:
+            dummyMessageList[0], // Pass a valid Messagelistmodel instance or list
+      ),
+      Profile(user: widget.user),
+    ];
+
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 243, 234, 206),
       appBar: CommonAppBar(titleText: _getTitleText(_selectedIndex)),
