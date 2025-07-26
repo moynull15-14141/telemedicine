@@ -4,7 +4,8 @@ class Messagemodel {
   final String senderName;
   final String time;
   final String image;
-  final String specialty; // New field for doctor's specialty
+  final String specialty;
+  final String messageid;
 
   Messagemodel({
     required this.text,
@@ -12,6 +13,7 @@ class Messagemodel {
     required this.senderName,
     required this.time,
     required this.image,
-    required this.specialty, // Initialize the specialty field
+    required this.specialty,
+    required this.messageid,
   });
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tlmdcin/scrn/chatBox.dart';
 import 'package:tlmdcin/data/messageData.dart'; // dummyMessages এর জন্য ইম্পোর্ট করুন
 import 'package:tlmdcin/model/messageModel.dart'; // Messagemodel এর জন্য ইম্পোর্ট করুন
 
@@ -39,31 +38,31 @@ class _chatState extends State<chatOld> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(
-              onPressed: () {
-                if (doctorMessage != null) {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => chatBox(
-                        doctorName: actualDoctorName,
-                        doctorImage: actualDoctorImage,
-                        specialty: doctorMessage?.specialty ?? "General",
-                      ),
-                    ),
-                  );
-                } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text(
-                        "ডাক্তারের তথ্য খুঁজে পাওয়া যায়নি। চ্যাট শুরু করা যাচ্ছে না।",
-                      ),
-                    ),
-                  );
-                }
-              },
-              child: const Text("ডাক্তারের সাথে চ্যাট করুন"),
-            ),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     if (doctorMessage != null) {
+            //       Navigator.push(
+            //         context,
+            //         MaterialPageRoute(
+            //           builder: (context) => chatBox(
+            //             doctorName: actualDoctorName,
+            //             doctorImage: actualDoctorImage,
+            //             specialty: doctorMessage?.specialty ?? "General",
+            //           ),
+            //         ),
+            //       );
+            //     } else {
+            //       ScaffoldMessenger.of(context).showSnackBar(
+            //         const SnackBar(
+            //           content: Text(
+            //             "ডাক্তারের তথ্য খুঁজে পাওয়া যায়নি। চ্যাট শুরু করা যাচ্ছে না।",
+            //           ),
+            //         ),
+            //       );
+            //     }
+            //   },
+            //   child: const Text("ডাক্তারের সাথে চ্যাট করুন"),
+            // ),
           ],
         ),
       ),

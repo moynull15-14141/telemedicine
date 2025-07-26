@@ -8,6 +8,7 @@ List<Messagemodel> dummyMessages = [
     image: "assets/dm1.jpeg",
     senderName: "Patient",
     specialty: "pa",
+    messageid: 'do1_pa1',
   ),
   Messagemodel(
     text: "Hello, আপনার সমস্যাটি বিস্তারিত বলুন। কোন দাঁতে ব্যথা করছে?",
@@ -16,6 +17,7 @@ List<Messagemodel> dummyMessages = [
     image: "assets/dm2.jpeg",
     senderName: "Dr.Sumit Kumar",
     specialty: "Dentist",
+    messageid: 'do1_pa1',
   ),
   Messagemodel(
     text: "আমার মাড়ির শেষের দিকের দাঁতে। মাঝে মাঝে খুব ব্যথা হয়।",
@@ -24,6 +26,7 @@ List<Messagemodel> dummyMessages = [
     image: "assets/dm1.jpeg",
     senderName: "Patient",
     specialty: "pa",
+    messageid: 'do1_pa1',
   ),
   Messagemodel(
     text: "আচ্ছা, ঠাণ্ডা বা গরম কিছু খেলে কি ব্যথা বাড়ে?",
@@ -32,6 +35,7 @@ List<Messagemodel> dummyMessages = [
     image: "assets/dm2.jpeg",
     senderName: "Dr.Sumit Kumar",
     specialty: "Dentist",
+    messageid: 'do1_pa1',
   ),
   Messagemodel(
     text: "জি, ঠাণ্ডা পানি খেলে ব্যথাটা বেড়ে যায়।",
@@ -40,6 +44,7 @@ List<Messagemodel> dummyMessages = [
     image: "assets/dm1.jpeg",
     senderName: "Patient",
     specialty: "pa",
+    messageid: 'do1_pa1',
   ),
   Messagemodel(
     text:
@@ -49,6 +54,7 @@ List<Messagemodel> dummyMessages = [
     image: "assets/dm2.jpeg",
     senderName: "Dr.Sumit Kumar",
     specialty: "Dentist",
+    messageid: 'do1_pa1',
   ),
   Messagemodel(
     text: "আমার মাড়ির শেষের দিকের দাঁতে। মাঝে মাঝে খুব ব্যথা হয়।",
@@ -57,6 +63,7 @@ List<Messagemodel> dummyMessages = [
     image: "assets/dm1.jpeg",
     senderName: "Patient",
     specialty: "pa",
+    messageid: 'do1_pa1',
   ),
   Messagemodel(
     text: "আমার মাড়ির শেষের দিকের দাঁতে। মাঝে মাঝে খুব ব্যথা হয়।",
@@ -65,6 +72,7 @@ List<Messagemodel> dummyMessages = [
     image: "assets/dm1.jpeg",
     senderName: "Patient",
     specialty: "pa",
+    messageid: 'do1_pa1',
   ),
   Messagemodel(
     text:
@@ -74,72 +82,81 @@ List<Messagemodel> dummyMessages = [
     image: "assets/dm2.jpeg",
     senderName: "Dr.Sumit Kumar",
     specialty: "Dentist",
+    messageid: 'do1_pa1',
   ),
 
   // new messages
   Messagemodel(
     text: "Hello Doctor, আমার গলায় দুইদিন ধরে জ্বালা করছে।",
-    senderId: "pa2", // নতুন পেশেন্ট
+    senderId: "pa1", // নতুন পেশেন্ট
     time: "11:10 AM",
     image: "assets/dm3.jpeg",
     senderName: "Patient 2",
     specialty: "ENT",
+    messageid: 'do2_pa1',
   ),
   Messagemodel(
     text: "Hello, সমস্যা কতদিন ধরে হচ্ছে? জ্বর আছে কি?",
-    senderId: "do2", // নতুন ডাক্তার
+    senderId: "do1", // নতুন ডাক্তার
     time: "11:11 AM",
-    image: "assets/dm4.jpeg",
+    image: "assets/dm5.jpeg",
     senderName: "Dr. Nazmun Nahar",
     specialty: "ENT Specialist",
+    messageid: 'do2_pa1',
   ),
   Messagemodel(
     text: "না জ্বর নেই, তবে গিলতে কষ্ট হচ্ছে।",
-    senderId: "pa2",
+    senderId: "pa1",
     time: "11:12 AM",
     image: "assets/dm3.jpeg",
     senderName: "Patient 2",
     specialty: "ENT",
+    messageid: 'do2_pa1',
   ),
   Messagemodel(
     text: "আপনি কি ঠান্ডা কিছু খেয়েছেন? বা এসিতে ঘুমিয়েছেন?",
     senderId: "do2",
     time: "11:13 AM",
-    image: "assets/dm4.jpeg",
+    image: "assets/dm5.jpeg",
     senderName: "Dr. Nazmun Nahar",
     specialty: "ENT Specialist",
+    messageid: 'do2_pa1',
   ),
   Messagemodel(
     text: "হ্যাঁ, রাতে এসিতে ঘুমিয়েছি।",
-    senderId: "pa2",
+    senderId: "pa1",
     time: "11:14 AM",
     image: "assets/dm3.jpeg",
     senderName: "Patient 2",
     specialty: "ENT",
+    messageid: 'do2_pa1',
   ),
   Messagemodel(
     text:
         "তাহলে ঠান্ডা লাগার কারণে এমনটা হতে পারে। আমি কিছু ওষুধ সাজেস্ট করবো।",
     senderId: "do2",
     time: "11:15 AM",
-    image: "assets/dm4.jpeg",
+    image: "assets/dm5.jpeg",
     senderName: "Dr. Nazmun Nahar",
     specialty: "ENT Specialist",
+    messageid: 'do2_pa1',
   ),
   Messagemodel(
     text: "ঠিক আছে ডাক্তার, অনেক ধন্যবাদ।",
-    senderId: "pa2",
+    senderId: "pa1",
     time: "11:16 AM",
     image: "assets/dm3.jpeg",
     senderName: "Patient 2",
     specialty: "ENT",
+    messageid: 'do2_pa1',
   ),
   Messagemodel(
     text: "ভালো থাকুন। প্রয়োজনে আবার যোগাযোগ করুন।",
     senderId: "do2",
     time: "11:17 AM",
-    image: "assets/dm4.jpeg",
+    image: "assets/dm5.jpeg",
     senderName: "Dr. Nazmun Nahar",
     specialty: "ENT Specialist",
+    messageid: 'do2_pa1',
   ),
 ];

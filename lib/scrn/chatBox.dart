@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tlmdcin/common%20wiget/fullscrnimage.dart';
-import 'package:tlmdcin/data/messageData.dart';
 import 'package:tlmdcin/model/messageModel.dart';
 import 'package:tlmdcin/scrn/drprofile.dart';
 
@@ -8,11 +7,16 @@ class chatBox extends StatelessWidget {
   final String doctorName;
   final String doctorImage;
   final String specialty;
+  final String currentUserId;
+  final List<Messagemodel> messages;
+
   const chatBox({
     super.key,
     required this.doctorName,
     required this.doctorImage,
     required this.specialty,
+    required this.messages,
+    required this.currentUserId,
   });
 
   @override
@@ -125,9 +129,9 @@ class chatBox extends StatelessWidget {
             child: ListView.builder(
               padding: const EdgeInsets.all(10),
 
-              itemCount: dummyMessages.length,
+              itemCount: messages.length,
               itemBuilder: (context, index) {
-                final message = dummyMessages[index];
+                final message = messages[index];
                 final isMe = message.senderId == currentUserId;
                 return _buildMessageRow(message, isMe);
               },
